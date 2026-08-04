@@ -26,5 +26,12 @@ This project uses the *Global Electronics Retail Dataset* from *Maven Analytics*
 | Apache Airflow | Workflow Orchestration | Automates pipeline execution, scheduling tasks.
 
 ## Workflow
+1. Upload CSV files to Snowflake Stage and load raw data into the Raw schema using COPY INTO.
+
+2. Use dbt to clean, standardize, and validate raw data in the Staging layer.
+
+3. Build dimensional models following a Star Schema in the Mart layer.
+
+4. Automate the ELT pipeline using Apache Airflow.
 
 ## Results
