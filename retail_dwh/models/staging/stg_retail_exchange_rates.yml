@@ -5,12 +5,8 @@ sources:
     database: retail_db
     schema: raw
     tables:
-      - name: sales
+      - name: exchange_rates
         columns:
-          - name: order_number
-            tests:
-              - not_null
-
-          - name: line_item
+          - name: currency
             tests:
               - not_null

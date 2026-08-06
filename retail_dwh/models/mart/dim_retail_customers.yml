@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: dim_retail_customers
+    columns:
+      - name: customer_key
+        tests:
+          - unique
+          - not_null

@@ -5,12 +5,9 @@ sources:
     database: retail_db
     schema: raw
     tables:
-      - name: sales
+      - name: products
         columns:
-          - name: order_number
+          - name: product_key
             tests:
-              - not_null
-
-          - name: line_item
-            tests:
+              - unique
               - not_null

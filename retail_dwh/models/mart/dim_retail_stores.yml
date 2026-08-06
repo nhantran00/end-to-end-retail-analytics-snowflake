@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: dim_retail_stores
+    columns:
+      - name: store_key
+        test:
+          - unique
+          - not_null

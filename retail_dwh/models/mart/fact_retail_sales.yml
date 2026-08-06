@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: fact_retail_sales
+    columns:
+      - name: order_item_key
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_retail_customers')
+              field: customer_key
+
+      - name: product_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_retail_products')
+              field: product_key
+
+      - name: store_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_retail_stores')
+              field: store_key
+
+      - name: order_date_key
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_date')
+              field: date_key
+
+      - name: delivery_date_key
+        tests:
+          - relationships:
+              to: ref('dim_date')
+              field: date_key

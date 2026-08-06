@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: dim_retail_products
+    columns:
+      - name: product_key
+        tests:
+          - unique
+          - not_null

@@ -33,7 +33,8 @@ models:
   retail_dwh:
     # Config indicated by + and applies to all files under models/example/
     staging:
+      +schema: staging
       +materialized: view
-
     mart:
+      +schema: mart
       +materialized: table

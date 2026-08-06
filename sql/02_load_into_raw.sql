@@ -78,7 +78,7 @@ file_format = csv_format;
 create or replace table raw.exchange_rates (
     "date" date,
     currency varchar(10),
-    "exchange" number 
+    "exchange" number(10, 6)
 );
 
 copy into raw.exchange_rates
