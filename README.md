@@ -22,8 +22,9 @@ This project uses the *Global Electronics Retail Dataset* from *Maven Analytics*
 | Component | Responsibility | Why This Tool? |
 |-----------|----------------|----------------|
 | Snowflake | Cloud Data Warehouse | Designed for OLAP workloads with independent compute and storage, making it suitable for scalable analytics. |
-| dbt | Data Transformation | Enables modular SQL transformations, test, documentation, and lineage. |
-| Apache Airflow | Workflow Orchestration | Automates pipeline execution, scheduling tasks.
+| dbt | Data Transformation | Enables modular SQL transformations, testing, documentation, and lineage. |
+| Apache Airflow | Workflow Orchestration | Automates and schedules the ELT pipeline. |
+| Power BI | Data Visualization | Connects to Snowflake to build interactive dashboards and communicate business insights. |
 
 ## Workflow
 1. Initialize the Snowflake environment by creating the warehouse, database, schemas.
@@ -34,10 +35,18 @@ This project uses the *Global Electronics Retail Dataset* from *Maven Analytics*
 ![alt text](images/image-3.png)
 ![alt text](images/image-2.png)
 
-3. Use dbt to clean, standardize, and validate raw data in the Staging layer.
+3. Use dbt to standardize, and validate raw data in the Staging layer.
+![alt text](images/image-4.png.png)
 
 4. Build dimensional models following a Star Schema in the Mart layer.
+![alt text](images/image-5.png)
+![alt text](images/image-6.png)
 
-5. Automate the ELT pipeline using Apache Airflow.
+5. Configure an Airflow connection to Snowflake and Automate the ELT pipeline using Apache Airflow.
+![alt text](images/images-7.png)
+![alt text](images/images-8.png)
+
+6. Connect Power BI to the Snowflake Mart layer to build interactive dashboards and visualize business insights.
+![alt text](images/iamges-9.png)
 
 ## Results
