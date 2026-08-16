@@ -1,4 +1,4 @@
-apache-airflow==2.9.2
-dbt-snowflake==1.9.0
-snowflake-connector-python>=3.0.0
-python-dotenv>=1.0.0
+astronomer-cosmos>=1.10.0
+apache-airflow-providers-standard
+apache-airflow-providers-snowflake
+apache-airflow-providers-fab
