@@ -36,17 +36,17 @@ This project uses the *Global Electronics Retail Dataset* from *Maven Analytics*
 ![alt text](images/image-2.png)
 
 3. Use dbt to standardize, and validate raw data in the Staging layer.
-![alt text](images/image-4.png.png)
+![alt text](images/image-4.png)
 
 4. Build dimensional models following a Star Schema in the Mart layer.
 ![alt text](images/image-5.png)
 ![alt text](images/image-6.png)
 
 5. Configure an Airflow connection to Snowflake and Automate the ELT pipeline using Apache Airflow.
-![alt text](images/images-7.png)
-![alt text](images/images-8.png)
+![alt text](images/image-7.png)
+![alt text](images/image-8.png)
 
 6. Connect Power BI to the Snowflake Mart layer to build interactive dashboards and visualize business insights.
-![alt text](images/iamges-9.png)
+![alt text](images/image-9.png)
 
 ## Results
