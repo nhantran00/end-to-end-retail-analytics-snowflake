@@ -7,6 +7,10 @@ SELECT
     s.store_key,
     TO_NUMBER(TO_CHAR(s.order_date, 'YYYYMMDD')) AS order_date_key,
     TO_NUMBER(TO_CHAR(s.delivery_date, 'YYYYMMDD')) AS delivery_date_key,
+    CASE
+        WHEN s.store_key = 0 THEN 'Online'
+        ELSE 'In-store'
+    END AS sales_channel,
     s.current_code,
     s.quantity,
     p.unit_price_usd,
