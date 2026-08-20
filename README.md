@@ -17,7 +17,7 @@ This project uses the *Global Electronics Retail Dataset* from *Maven Analytics*
 
 ## Architecture
 
-[image]
+![alt text](image-11.png)
 
 | Component | Responsibility | Why This Tool? |
 |-----------|----------------|----------------|
@@ -50,7 +50,8 @@ This project uses the *Global Electronics Retail Dataset* from *Maven Analytics*
 ![alt text](images/image-9.png)
 
 ## Results
-![alt text](images/image-10.png)!
+# Sales & Performance Overview Dashboard
+![alt text](images/image-10.png)
 1. Product & Geography: Computers are the largest revenue-generating category ($19.3M), while the US is the dominant customer market with approximately 6.8K customers.
 2. Seasonality: Sales show strong seasonal patterns, with revenue and order volume peaking around February and December, while April represents a significant low point.
 3. Delivery: Average delivery time improved substantially over time, declining from approximately 8 days in 2016 to around 4–5 days in recent years.
