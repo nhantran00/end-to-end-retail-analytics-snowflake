@@ -17,7 +17,7 @@ This project uses the *Global Electronics Retail Dataset* from *Maven Analytics*
 
 ## Architecture
 
-![alt text](images/iamges-11.png)
+![alt text](images/iamge-11.png)
 
 | Component | Responsibility | Why This Tool? |
 |-----------|----------------|----------------|
